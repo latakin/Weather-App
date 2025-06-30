@@ -117,7 +117,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
     .main-container {
         padding: 5px;
         background-size: cover;
