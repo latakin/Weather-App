@@ -2,12 +2,14 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
-    min-height: 400px;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .main-container {
-    height: auto;
-    width: 400px;
+    height: 95vh;
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid black;
     border-radius: 10px;
@@ -16,14 +18,16 @@ body {
     align-items: center;
     position: relative;
     margin-top: 20px;
+    box-sizing: border-box;
     
 }
 
 .second-container {
     margin-top: 10px;
-    width: 60vh;
+    width: 90%;
     padding: 30px 10px;
     background-color: rgba(0 ,0 , 0, 0.7);
+    max-width: 400px;
 }
     
 
@@ -33,7 +37,7 @@ body {
     position: absolute;
     top: auto;
     left: 0;
-    width: 60vh;
+    width: 90%;
     max-height: 0;
     transition: max-height 0.5s ease-out, padding 0.5s ease-out;
     padding: 0 10px;
@@ -120,11 +124,12 @@ body {
 @media (max-width: 360px) {
     .main-container {
         padding: 5px;
-        background-size: cover;
     }
     .second-container {
-        flex-direction: column;
-        align-items: center;
+        width: 90%;
+    }
+    .weather-container {
+    width: 90%;
     }
     
     
