@@ -51,7 +51,7 @@ const apiKey = 'f24906418cd485dfa82a5fe992122486';
  
 
  const fetchlat = (cityName) => {
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${apiKey}`
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${apiKey}`
     
     return fetch(url)
     .then((response) => {
