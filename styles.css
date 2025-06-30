@@ -116,3 +116,26 @@ body {
         font-size: 1rem;
     }
 }
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 5px;
+        background-size: cover;
+    }
+    
+    
+    input#city {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    button#button {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    h2, h3 {
+        font-size: 0.8rem;
+    }
+}
